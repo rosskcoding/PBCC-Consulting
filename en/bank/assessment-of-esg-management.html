@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+    <title>Services | PBCC</title>
+    <meta name="description" content="Мы предлагаем комплексный пакет услуг, предназначенных для совершенствования подхода вашей компании к отчетности и раскрытию информации в области ESG.">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e40676faa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+
+<body class="page">
+
+<div>
+    <header>
+        <nav class="navbar">
+          <div class="menu-block">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="/img/pbcc_logo.svg">
+                </a>
+            </div>
+            <ul class="menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li class="has-submenu">
+                <a href="#" class="services-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="services-submenu">
+                  Services <span class="chev" aria-hidden="true"></span>
+                </a>
+                <ul id="services-submenu" class="submenu" role="menu">
+                  <li role="none"><a role="menuitem" href="/en/services-for-industrial-companies.html">CORPORATES</a></li>
+                  <li role="none"><a role="menuitem" href="/en/services-for-banks.html">BANKS AND FINANCIALS</a></li>
+                </ul>
+              </li>
+              <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="lang">
+            <div><a href="/ru/bank/assessment-of-esg-management.html">ру</a></div>
+            <div>|</div>
+            <div class="active">en</div>
+          </div>
+          <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="main-img">
+        <img src="/img/services-pp-5-b.png">
+    </div>
+
+    <div class="wrap">
+        <div class="main-title">Services</div>
+
+        <div class="main-bg-img">
+            <img src="/img/page-bg-img.svg">
+        </div>
+
+        <div class="sub-title">Assessment of ESG<br> management</div>
+        
+
+        <div class="inner-text">
+
+        <br>
+
+        <h3>Approach and tools:</h3>
+
+        <br>
+
+          <div class="flex-text">
+            <strong>Diagnostics of the existing ESG system:</strong>
+            <ul>
+              <li>analysis of internal policies, procedures, strategies and KPIs related to sustainable finance and risk management</li>
+              <li>assessment of non-financial reporting, corporate communications and public ESG commitments (including Net Zero)</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Verification of compliance with international standards and practices:</strong>
+            <ul>
+              <li>GRI, SASB, TCFD, ISSB/IFRS S1–S2, ESRS</li>
+              <li>sector-specific standards: PCAF, NZBA, PRI</li>
+              <li>ISO 14001, ISO 45001, ISO 9001</li>
+              <li>UN Global Compact Principles, UN Sustainable Development Goals</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Comparison with ESG rating agency methodologies:</strong>
+            <ul>
+              <li>S&P Global ESG, MSCI ESG Ratings, Moody’s, ESG Fitch, Sustainalytics</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Stakeholder engagement:</strong>
+            <ul>
+              <li>interviews and surveys with Board members, risk managers, compliance and business units</li>
+              <li>identification of expectations of investors, regulators and clients</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>ESG risk assessment:</strong>
+            <ul>
+              <li>analysis of the impact of climate and social risks on credit portfolios and investment decisions</li>
+              <li>definition of priority management areas, including compliance and risk appetite</li>
+            </ul>
+          </div>
+
+
+          <br>
+
+        <h3>Results:</h3>
+
+        <br>
+        
+        <div class="flex-text">
+          <ul>
+            <li>Objective assessment of the bank’s ESG practices maturity across the E, S and G pillars.</li>
+            <li>Roadmap for integrating ESG into strategy, risk management systems and compliance processes.</li>
+            <li>Recommendations on non-financial disclosure in line with international standards and investor expectations.</li>
+            <li>Practical proposals for managing ESG and climate risks at the level of credit and investment policy.</li>
+            <li>Increased trust from investors, regulators and clients.</li>
+          </ul>
+        </div>
+
+
+
+        <br><br>
+
+        </div>
+
+
+        
+
+        <div class="copyright">© PBCC LLC. 2013-2026. All rights reserved.</div>
+    </div>
+
+    
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+
+  // раскрытие подменю «Услуги» по клику (мобайл + десктоп)
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.services-toggle');
+    const parentLi = document.querySelector('.has-submenu');
+
+    if (toggle && parentLi) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isOpen = parentLi.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // закрытие по клику вне
+      document.addEventListener('click', function (e) {
+        if (!parentLi.contains(e.target)) {
+          parentLi.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
+
+

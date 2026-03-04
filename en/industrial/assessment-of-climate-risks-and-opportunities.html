@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+    <title>Services | PBCC</title>
+    <meta name="description" content="Мы предлагаем комплексный пакет услуг, предназначенных для совершенствования подхода вашей компании к отчетности и раскрытию информации в области ESG.">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e40676faa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+
+<body class="page">
+
+<div>
+    <header>
+        <nav class="navbar">
+          <div class="menu-block">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="/img/pbcc_logo.svg">
+                </a>
+            </div>
+            <ul class="menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li class="has-submenu">
+                <a href="#" class="services-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="services-submenu">
+                  Services <span class="chev" aria-hidden="true"></span>
+                </a>
+                <ul id="services-submenu" class="submenu" role="menu">
+                  <li role="none"><a role="menuitem" href="/en/services-for-industrial-companies.html">CORPORATES</a></li>
+                  <li role="none"><a role="menuitem" href="/en/services-for-banks.html">BANKS AND FINANCIALS</a></li>
+                </ul>
+              </li>
+              <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="lang">
+            <div><a href="/ru/industrial/assessment-of-climate-risks-and-opportunities.html">ру</a></div>
+            <div>|</div>
+            <div class="active">en</div>
+          </div>
+          <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="main-img">
+        <img src="/img/services-pp-9-b.png">
+    </div>
+
+    <div class="wrap">
+        <div class="main-title">Services</div>
+
+        <div class="main-bg-img">
+            <img src="/img/page-bg-img.svg">
+        </div>
+
+        <div class="sub-title">Assessment of climate risks<br> and opportunities</div>
+
+        
+
+        <div class="inner-text">
+
+        <br>
+
+        <h3>Approach and tools:</h3>
+
+        <br>
+
+          <div class="flex-text">
+            <strong>Identification of relevant financial risks</strong>
+            <ul>
+              <li>identification of physical risks (extreme weather events, resource intensity) and transition risks (regulation, carbon taxes, CBAM)</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Development of calculation methodology</strong>
+            <ul>
+              <li>design of an approach for quantitative and qualitative assessment of risk impacts on financial position, cash flows and company value</li>
+              <li>consideration of short-, medium- and long-term horizons</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Data collection and verification</strong>
+            <ul>
+              <li>work with the company’s financial model and its adaptation to ESG indicators and climate projections</li>
+              <li>verification of data completeness and accuracy</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Scenario modelling</strong>
+            <ul>
+              <li>scenario analysis in line with TCFD and ISSB/IFRS S2</li>
+              <li>assessment of financial impacts of different combinations of climate (physical and transition) and environmental scenarios</li>
+              <li>identification of high-vulnerability areas and determination of strategic opportunities</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Preparation of disclosures</strong>
+            <ul>
+              <li>drafting of texts for inclusion in non-financial and/or financial reporting</li>
+              <li>ensuring compliance with international standards (ISSB, SASB, TCFD, ESRS)</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Presentation of results</strong>
+            <ul>
+              <li>final session explaining the approach, findings and scenarios</li>
+              <li>practical recommendations for integrating results into strategy, risk management and financial planning</li>
+            </ul>
+          </div>
+
+
+          <br>
+
+        <h3>Results:</h3>
+
+        <br>
+        
+        <div class="flex-text">
+          <ul>
+            <li>Financial models (Excel) integrating ESG factors and climate risks.</li>
+            <li>Draft disclosures (Word) for inclusion in reporting in line with ISSB/SASB/TCFD.</li>
+            <li>Final management presentation with key findings and recommendations.</li>
+            <li>Company readiness to meet investor and regulatory requirements on climate disclosures.</li>
+            <li>Tools to reduce business vulnerability and identify new opportunities (energy efficiency, green financing).</li>
+          </ul>
+        </div>
+
+
+
+        <br><br>
+
+        </div>
+
+
+        
+
+        <div class="copyright">© PBCC LLC. 2013-2026. All rights reserved.</div>
+    </div>
+
+    
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+
+  // раскрытие подменю «Услуги» по клику (мобайл + десктоп)
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.services-toggle');
+    const parentLi = document.querySelector('.has-submenu');
+
+    if (toggle && parentLi) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isOpen = parentLi.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // закрытие по клику вне
+      document.addEventListener('click', function (e) {
+        if (!parentLi.contains(e.target)) {
+          parentLi.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
+
+

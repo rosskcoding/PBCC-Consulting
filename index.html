@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+    <title>Premier Business Consulting and Communication | PBCC</title>
+    <meta name="description" content="PBCC is a boutique consultancy specializing in strategic advisory, premium ESG reporting and development services, sustainable and climate solutions, as well as investor relations and communications.">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e40676faa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+
+<body class="main">
+
+<div class="main-bg">
+    <header>
+        <nav class="navbar">
+          <div class="menu-block">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="/img/pbcc_logo.svg">
+                </a>
+            </div>
+            <ul class="menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li class="has-submenu">
+                <a href="#" class="services-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="services-submenu">
+                  Services <span class="chev" aria-hidden="true"></span>
+                </a>
+                <ul id="services-submenu" class="submenu" role="menu">
+                  <li role="none"><a role="menuitem" href="/en/services-for-industrial-companies.html">CORPORATES</a></li>
+                  <li role="none"><a role="menuitem" href="/en/services-for-banks.html">BANKS AND FINANCIALS</a></li>
+                </ul>
+              </li>
+              <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="lang">
+            <div><a href="/ru/index.html">ру</a></div>
+            <div>|</div>
+            <div class="active">en</div>
+          </div>
+          <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="main-img">
+        <img src="/img/main-img.png">
+    </div>
+
+    <div class="wrap">
+        <div class="main-title">Premier Business</div>
+
+        <div class="main-bg-img">
+            <img src="/img/main-bg-img.svg">
+        </div>
+
+        <div class="sub-title">Consulting&Communications</div>
+
+        <div class="main-text">We are leaders in strategic consulting, comprehensive ESG assessments, sustainable development, and IR communications.</div>
+
+        <div class="copyright">© PBCC LLC. 2013-2026. All rights reserved.</div>
+    </div>
+
+    
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+
+  // раскрытие подменю «Услуги» по клику (мобайл + десктоп)
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.services-toggle');
+    const parentLi = document.querySelector('.has-submenu');
+
+    if (toggle && parentLi) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isOpen = parentLi.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // закрытие по клику вне
+      document.addEventListener('click', function (e) {
+        if (!parentLi.contains(e.target)) {
+          parentLi.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
+
+

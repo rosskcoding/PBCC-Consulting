@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+    <title>Контакты | PBCC</title>
+    <meta name="description" content="PBCC - консалтинговая компания, специализирующаяся на стратегическом консультировании, премиальной отчетности ESG и услугах по развитию, решениях в области устойчивого развития и климата, а также связях с инвесторами и коммуникациях.">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e40676faa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+
+<body class="page">
+
+<div>
+    <header>
+      <nav class="navbar">
+        <div class="menu-block">
+          <div class="logo">
+            <a href="/ru/index.html">
+              <img src="/img/pbcc_logo.svg" alt="PBCC">
+            </a>
+          </div>
+          <ul class="menu">
+            <li><a href="/ru/index.html">Главная</a></li>
+            <li><a href="/ru/about.html">О нас</a></li>
+            <li class="has-submenu">
+              <a href="#" class="services-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="services-submenu">
+                Услуги <span class="chev" aria-hidden="true"></span>
+              </a>
+              <ul id="services-submenu" class="submenu" role="menu">
+                <li role="none"><a role="menuitem" href="/ru/services-for-industrial-companies.html">КОМПАНИЯМ</a></li>
+                <li role="none"><a role="menuitem" href="/ru/services-for-banks.html">БАНКАМ И ФИНАНСОВЫМ ОРГАНИЗАЦИЯМ</a></li>
+              </ul>
+            </li>
+            <li><a href="/ru/contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="lang">
+          <div class="active">ру</div>
+          <div>|</div>
+          <div><a href="/contacts.html">en</a></div>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-img">
+        <img src="/img/contact-img.png">
+    </div>
+
+    <div class="wrap">
+        <div class="main-title">Контакты</div>
+
+        <div class="main-bg-img">
+            <img src="/img/page-bg-img.svg">
+        </div>
+
+
+        <div class="inner-text">
+
+        <b>Главный офис:</b><br><br>
+
+        <i class="fa-solid fa-location-dot"></i> 75 Марш Уолл, Хэмптон Тауэр Лондон, Великобритания 
+        <br>
+        <i class="fa-regular fa-envelope"></i> <a href="mailto:hello@pbcc.consulting">hello@pbcc.consulting</a>
+        <br><br><br>
+        <b>Представительства:</b><br><br>
+
+        <div class="flex">
+          <div>
+            Казахстанский офис
+            <br>
+            <i class="fa-solid fa-location-dot"></i> Астана, Казахстан
+            <br>
+            <i class="fa-solid fa-phone"></i> +77759993953
+            <br>
+            <i class="fa-regular fa-envelope"></i> <a href="mailto:hello@pbcc.consulting">hello@pbcc.consulting</a>
+            <br>
+          </div>
+          <div>
+            Украинский офис
+            <br>
+            <i class="fa-solid fa-location-dot"></i> Киев, Украина
+            <br>
+            <i class="fa-solid fa-phone"></i> +380672175391
+            <br>
+            <i class="fa-regular fa-envelope"></i> <a href="mailto:hello@pbcc.consulting">hello@pbcc.consulting</a>
+            <br>
+          </div>
+        </div>
+        <div>
+            Узбекский офис
+            <br>
+            <i class="fa-solid fa-location-dot"></i> Ташкент, Узбекситан
+            <br>
+            <i class="fa-solid fa-phone"></i> +998947332502
+            <br>
+            <i class="fa-regular fa-envelope"></i> <a href="mailto:hello@pbcc.consulting">hello@pbcc.consulting</a>
+            <br>
+          </div>
+        </div>
+
+
+
+        <br><br><br>
+
+        <div class="copyright">© PBCC LLC. 2013-2026. Все права защищены.</div>
+      </div>
+
+
+    
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+
+  // раскрытие подменю «Услуги» по клику (мобайл + десктоп)
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.services-toggle');
+    const parentLi = document.querySelector('.has-submenu');
+
+    if (toggle && parentLi) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isOpen = parentLi.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // закрытие по клику вне
+      document.addEventListener('click', function (e) {
+        if (!parentLi.contains(e.target)) {
+          parentLi.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
+
+

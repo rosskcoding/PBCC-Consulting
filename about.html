@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+    <title>About | PBCC</title>
+    <meta name="description" content="PBCC is a boutique consultancy specializing in strategic advisory, premium ESG reporting and development services, sustainable and climate solutions, as well as investor relations and communications.">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e40676faa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+
+<body class="page">
+
+<div>
+    <header>
+        <nav class="navbar">
+          <div class="menu-block">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="/img/pbcc_logo.svg">
+                </a>
+            </div>
+            <ul class="menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li class="has-submenu">
+                <a href="#" class="services-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="services-submenu">
+                  Services <span class="chev" aria-hidden="true"></span>
+                </a>
+                <ul id="services-submenu" class="submenu" role="menu">
+                  <li role="none"><a role="menuitem" href="/en/services-for-industrial-companies.html">CORPORATES</a></li>
+                  <li role="none"><a role="menuitem" href="/en/services-for-banks.html">BANKS AND FINANCIALS</a></li>
+                </ul>
+              </li>
+              <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="lang">
+            <div><a href="/ru/about.html">ру</a></div>
+            <div>|</div>
+            <div class="active">en</div>
+          </div>
+          <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="main-img">
+        <img src="/img/about-1.png">
+    </div>
+
+    <div class="wrap">
+        <div class="main-title">About Us</div>
+
+        <div class="main-bg-img">
+            <img src="/img/page-bg-img.svg">
+        </div>
+
+
+        <div class="inner-text">For over 10 years, we have been providing clients worldwide with services in strategic and management consulting, ESG risk assessments of company operations, IR communications, reputation building, and the preparation of reports in accordance with international standards. We also deliver open and corporate training sessions. Our expertise extends to digital communications and enhancing a company’s reputation as a socially responsible organisation. All our products and methodologies are proprietary and have been successfully tested by our clients. They comply with leading international standards and practices while being fully optimised to meet the specific needs of companies and their industries.
+        </div>
+
+
+        <div class="flex-block">
+          <div class="flex-img">
+            <img src="/img/about-2.png">
+          </div>
+          <div>
+            <div class="flex-title">Why Choose Us?</div>
+
+            <div class="flex-text">
+              <ul>
+                <li>We are the leading experts in the market for strategic consulting, comprehensive ESG assessments of companies, investor communications, and sustainable development.</li>
+                <li>We are focused on addressing the specific challenges faced by your company, utilising a broad range of international tools as well as innovative proprietary methodologies drawn from various industries.
+</li>
+                <li>We take an individualised approach to working with each client, delving deeply into their operations, selecting the most effective tools, and avoiding generic, off-the-shelf solutions.</li>
+                <li>We embrace challenges, continuously evolve, stay attuned to global trends, and execute our work with diligence and dedication. As a result, we consistently deliver the very best solutions to our clients.
+</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="copyright">© PBCC LLC. 2013-2026. All rights reserved.</div>
+    </div>
+
+    
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+
+  // раскрытие подменю «Услуги» по клику (мобайл + десктоп)
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.services-toggle');
+    const parentLi = document.querySelector('.has-submenu');
+
+    if (toggle && parentLi) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isOpen = parentLi.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // закрытие по клику вне
+      document.addEventListener('click', function (e) {
+        if (!parentLi.contains(e.target)) {
+          parentLi.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
+
+

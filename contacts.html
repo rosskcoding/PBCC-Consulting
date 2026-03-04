@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+    <title>Contacts | PBCC</title>
+    <meta name="description" content="PBCC is a boutique consultancy specializing in strategic advisory, premium ESG reporting and development services, sustainable and climate solutions, as well as investor relations and communications.">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e40676faa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+
+<body class="page">
+
+<div>
+    <header>
+        <nav class="navbar">
+          <div class="menu-block">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="/img/pbcc_logo.svg">
+                </a>
+            </div>
+            <ul class="menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li class="has-submenu">
+                <a href="#" class="services-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="services-submenu">
+                  Services <span class="chev" aria-hidden="true"></span>
+                </a>
+                <ul id="services-submenu" class="submenu" role="menu">
+                  <li role="none"><a role="menuitem" href="/en/services-for-industrial-companies.html">CORPORATES</a></li>
+                  <li role="none"><a role="menuitem" href="/en/services-for-banks.html">BANKS AND FINANCIALS</a></li>
+                </ul>
+              </li>
+              <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="lang">
+            <div><a href="/ru/contacts.html">ру</a></div>
+            <div>|</div>
+            <div class="active">en</div>
+          </div>
+          <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="main-img">
+        <img src="/img/contact-img.png">
+    </div>
+
+    <div class="wrap">
+        <div class="main-title">Contacts</div>
+
+        <div class="main-bg-img">
+            <img src="/img/page-bg-img.svg">
+        </div>
+
+
+        <div class="inner-text">
+
+        <b>Head Office:</b><br><br>
+
+        <i class="fa-solid fa-location-dot"></i> Kyiv, Ukraine
+        <br>
+        <i class="fa-solid fa-phone"></i> +380672175391
+        <br>
+        <i class="fa-regular fa-envelope"></i> <a href="mailto:hello@pbcc.consulting">hello@pbcc.consulting</a>
+        <br><br><br>
+        <b>International Contact Points:</b><br><br>
+
+        <div class="grid">
+          <div class="contacts-block">
+            Kazakhstan
+            <br>
+            <i class="fa-solid fa-location-dot"></i> Astana, Kazakhstan
+            <br>
+            <i class="fa-solid fa-phone"></i> +77759993953
+            <br>
+            <i class="fa-regular fa-envelope"></i> <a href="mailto:hello@pbcc.consulting">hello@pbcc.consulting</a>
+            <br>
+          </div>
+          <div class="contacts-block">
+            United Kingdom (UK)
+            <br>
+            <i class="fa-solid fa-location-dot"></i> London, UK
+            <br>
+            <i class="fa-solid fa-phone"></i> +447342185938
+            <br>
+            <i class="fa-regular fa-envelope"></i> <a href="mailto:hello@pbcc.consulting">hello@pbcc.consulting</a>
+            <br>
+          </div>
+          <div class="contacts-block">
+            Uzbekistan
+            <br>
+            <i class="fa-solid fa-location-dot"></i> Tashkent, Uzbekistan
+            <br>
+            <i class="fa-solid fa-phone"></i> +998947332502
+            <br>
+            <i class="fa-regular fa-envelope"></i> <a href="mailto:hello@pbcc.consulting">hello@pbcc.consulting</a>
+            <br>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="copyright">© PBCC LLC. 2013-2026. All rights reserved.</div>
+      </div>
+
+
+    
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+
+  // раскрытие подменю «Услуги» по клику (мобайл + десктоп)
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.services-toggle');
+    const parentLi = document.querySelector('.has-submenu');
+
+    if (toggle && parentLi) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isOpen = parentLi.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // закрытие по клику вне
+      document.addEventListener('click', function (e) {
+        if (!parentLi.contains(e.target)) {
+          parentLi.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
+
+

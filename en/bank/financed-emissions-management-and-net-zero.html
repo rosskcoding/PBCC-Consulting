@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+    <title>Services | PBCC</title>
+    <meta name="description" content="Мы предлагаем комплексный пакет услуг, предназначенных для совершенствования подхода вашей компании к отчетности и раскрытию информации в области ESG.">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e40676faa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+
+<body class="page">
+
+<div>
+    <header>
+        <nav class="navbar">
+          <div class="menu-block">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="/img/pbcc_logo.svg">
+                </a>
+            </div>
+            <ul class="menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li class="has-submenu">
+                <a href="#" class="services-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="services-submenu">
+                  Services <span class="chev" aria-hidden="true"></span>
+                </a>
+                <ul id="services-submenu" class="submenu" role="menu">
+                  <li role="none"><a role="menuitem" href="/en/services-for-industrial-companies.html">CORPORATES</a></li>
+                  <li role="none"><a role="menuitem" href="/en/services-for-banks.html">BANKS AND FINANCIALS</a></li>
+                </ul>
+              </li>
+              <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="lang">
+            <div><a href="/ru/bank/financed-emissions-management-and-net-zero.html">ру</a></div>
+            <div>|</div>
+            <div class="active">en</div>
+          </div>
+          <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="main-img">
+        <img src="/img/services-b-4-b.png">
+    </div>
+
+    <div class="wrap">
+        <div class="main-title">Services</div>
+
+        <div class="main-bg-img">
+            <img src="/img/page-bg-img.svg">
+        </div>
+
+        <div class="sub-title">Financed emissions management<br> and Net Zero</div>
+        
+
+        <div class="inner-text">
+
+        <br>
+
+        <h3>Approach and tools:</h3>
+
+        <br>
+
+          <div class="flex-text">
+            <strong>Calculation of financed emissions (Scope 3, Cat. 15):</strong>
+            <ul>
+              <li>application of the PCAF (Partnership for Carbon Accounting Financials) methodology</li>
+              <li>coverage of credit and investment portfolios (equity, debt, project finance)</li>
+              <li>identification of carbon-intensive sectors and clients</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Portfolio analysis and scenario modelling:</strong>
+            <ul>
+              <li>assessment of the carbon footprint by sector and region</li>
+              <li>scenario analysis using NGFS and IEA scenarios</li>
+              <li>identification of vulnerable assets and clients with high carbon risk</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Target-setting and Net Zero trajectories:</strong>
+            <ul>
+              <li>establishment of short-, medium- and long-term targets for reducing financed emissions</li>
+              <li>alignment of targets with international initiatives (NZBA, GFANZ, SBTi)</li>
+              <li>development of transition roadmaps towards Net Zero for credit and investment portfolios</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Integration into the bank’s business model:</strong>
+            <ul>
+              <li>embedding climate KPIs into credit policies and risk management processes</li>
+              <li>development and implementation of green financial products  (ESG loans, green bonds, sustainable finance)</li>
+              <li>engagement with clients and counterparties to support emissions reduction</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Monitoring and disclosure:</strong>
+            <ul>
+              <li>regular calculation and verification of financed emissions</li>
+              <li>disclosure in line with international standards  (ISSB/IFRS S2, ESRS E1, TCFD, PCAF)</li>
+              <li>annual update of Net Zero roadmaps</li>
+            </ul>
+          </div>
+
+
+          <br>
+
+        <h3>Results:</h3>
+
+        <br>
+        
+        <div class="flex-text">
+          <ul>
+            <li>Transparent accounting of Scope 3 (financed emissions) across the entire portfolio.</li>
+            <li>Realistic and verifiable Net Zero targets, aligned with global initiatives.</li>
+            <li>Integration of climate factors into credit and investment decisions.</li>
+            <li>Strengthened positioning of the bank in ESG ratings and sustainable finance indices.</li>
+            <li>Increased trust from investors, regulators and international partners.</li>
+            <li>Reduced cost of capital and expanded access to green financing.</li>
+          </ul>
+        </div>
+
+
+
+        <br><br>
+
+        </div>
+
+
+        
+
+        <div class="copyright">© PBCC LLC. 2013-2026. All rights reserved.</div>
+    </div>
+
+    
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+
+  // раскрытие подменю «Услуги» по клику (мобайл + десктоп)
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.services-toggle');
+    const parentLi = document.querySelector('.has-submenu');
+
+    if (toggle && parentLi) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isOpen = parentLi.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // закрытие по клику вне
+      document.addEventListener('click', function (e) {
+        if (!parentLi.contains(e.target)) {
+          parentLi.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
+
+

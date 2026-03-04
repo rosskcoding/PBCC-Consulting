@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+    <title>Services | PBCC</title>
+    <meta name="description" content="Мы предлагаем комплексный пакет услуг, предназначенных для совершенствования подхода вашей компании к отчетности и раскрытию информации в области ESG.">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e40676faa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+</head>
+
+<body class="page">
+
+<div>
+    <header>
+        <nav class="navbar">
+          <div class="menu-block">
+            <div class="logo">
+                <a href="index.html">
+                  <img src="/img/pbcc_logo.svg">
+                </a>
+            </div>
+            <ul class="menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li class="has-submenu">
+                <a href="#" class="services-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="services-submenu">
+                  Services <span class="chev" aria-hidden="true"></span>
+                </a>
+                <ul id="services-submenu" class="submenu" role="menu">
+                  <li role="none"><a role="menuitem" href="/en/services-for-industrial-companies.html">CORPORATES</a></li>
+                  <li role="none"><a role="menuitem" href="/en/services-for-banks.html">BANKS AND FINANCIALS</a></li>
+                </ul>
+              </li>
+              <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="lang">
+            <div><a href="/ru/industrial/climate-strategy.html">ру</a></div>
+            <div>|</div>
+            <div class="active">en</div>
+          </div>
+          <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="main-img">
+        <img src="/img/services-pp-3-b.png">
+    </div>
+
+    <div class="wrap">
+        <div class="main-title">Services</div>
+
+        <div class="main-bg-img">
+            <img src="/img/page-bg-img.svg">
+        </div>
+
+        <div class="sub-title">Climate strategy</div>
+
+        
+
+        <div class="inner-text">
+
+        <br>
+
+        <h3>Approach and tools:</h3>
+
+        <br>
+
+          <div class="flex-text">
+            <strong>Analysis of the company’s current carbon profile:</strong>
+            <ul>
+              <li>assessment of direct and indirect emissions (Scope 1, 2 and 3)</li>
+              <li>identification of carbon-intensive processes and supply chains</li>
+              <li>comparison with industry emission factors and best practices</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Diagnosis of climate risks and opportunities:</strong>
+            <ul>
+              <li>analysis of physical risks (extreme weather events, resource intensity)</li>
+              <li>analysis of transition risks (regulatory changes, CBAM, national decarbonisation targets)</li>
+              <li>identification of opportunities (energy efficiency, green products, access to financing)</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Scenario modelling and strategic planning:</strong>
+            <ul>
+              <li>scenario analysis in line with TCFD and ISSB/IFRS S2</li>
+              <li>financial assessment of climate scenario impacts on the business</li>
+              <li>determination of high-vulnerability areas and strategic priorities</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Development of a climate strategy and roadmap:</strong>
+            <ul>
+              <li>setting emission reduction targets (including Net Zero)</li>
+              <li>development of an initiative package: energy efficiency, transition to renewable sources, supply chain decarbonisation</li>
+              <li>integration of climate-related KPIs into the corporate management system</li>
+            </ul>
+          </div>
+
+          <div class="flex-text">
+            <strong>Integration and disclosure:</strong>
+            <ul>
+              <li>preparation of disclosures in reporting (TCFD, ISSB/IFRS S2, ESRS E1)</li>
+              <li>embedding climate objectives into corporate strategy and investment programmes</li>
+              <li>development of monitoring mechanisms and regular updates to the climate strategy</li>
+            </ul>
+          </div>
+
+          <br>
+
+        <h3>Results:</h3>
+
+        <br>
+
+        <div class="flex-text">
+          <ul>
+            <li>A comprehensive climate strategy and roadmap.</li>
+            <li>Readiness for international and national climate requirements (including CBAM and Net Zero targets).</li>
+            <li>Financial models and scenario forecasts incorporating climate risks.</li>
+            <li>Reduction of carbon footprint and costs through energy efficiency and supply chain optimisation.</li>
+            <li>Enhanced investment attractiveness through transparency and alignment with international standards (TCFD, ISSB, ESRS).</li>
+            <li>Increased trust from investors, regulators and key partners.</li>
+          </ul>
+        </div>
+
+
+
+        <br><br>
+
+        </div>
+
+
+        
+
+        <div class="copyright">© PBCC LLC. 2013-2026. All rights reserved.</div>
+    </div>
+
+    
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+
+  // раскрытие подменю «Услуги» по клику (мобайл + десктоп)
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.services-toggle');
+    const parentLi = document.querySelector('.has-submenu');
+
+    if (toggle && parentLi) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isOpen = parentLi.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // закрытие по клику вне
+      document.addEventListener('click', function (e) {
+        if (!parentLi.contains(e.target)) {
+          parentLi.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  });
+</script>
+</div>
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
+
+

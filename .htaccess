@@ -1,0 +1,17 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# English as default for Google landings on Russian URLs.
+RewriteCond %{HTTP_REFERER} (^|://)([^/]+\.)?google\.[^/]+ [NC]
+RewriteRule ^ru/?$ / [R=302,L]
+
+RewriteCond %{HTTP_REFERER} (^|://)([^/]+\.)?google\.[^/]+ [NC]
+RewriteRule ^ru/(bank|industrial)/(.+)$ /en/$1/$2 [R=302,L,NE]
+
+RewriteCond %{HTTP_REFERER} (^|://)([^/]+\.)?google\.[^/]+ [NC]
+RewriteRule ^ru/(services-for-(banks|industrial-companies)\.html)$ /en/$1 [R=302,L,NE]
+
+RewriteCond %{HTTP_REFERER} (^|://)([^/]+\.)?google\.[^/]+ [NC]
+RewriteRule ^ru/(.+)$ /$1 [R=302,L,NE]
