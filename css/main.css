@@ -151,7 +151,7 @@ header {
 }
 
 .lang {
-  display: flex;
+  display: none !important;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
